@@ -13,6 +13,7 @@
     <p class="result-success">结果：完美实现单级表头和多级表头的导出</p>
     <el-table
       v-if="!isMore"
+      key="single"
       v-loading="listLoading"
       :data="list"
       element-loading-text="Loading"
@@ -31,6 +32,7 @@
     </el-table>
     <el-table
       v-else
+      key="more"
       v-loading="listLoading"
       :data="list"
       element-loading-text="Loading"

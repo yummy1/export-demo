@@ -66,7 +66,7 @@ export const constantRoutes = [
         path: '/export/excel1',
         name: 'excel1',
         component: () => import('@/views/export-excel/index'),
-        meta: { title: 'Excel1', icon: 'table' }
+        meta: { title: 'ExportExcel', icon: 'table' }
       }
     ]
   },
