@@ -138,6 +138,42 @@ export const constantRoutes = [
     meta: { title: 'PDF1-content', icon: 'pdf' }
   },
 
+  {
+    path: '/preview',
+    name: 'Preview',
+    component: Layout,
+    redirect: '/preview/preview1',
+    meta: { title: 'Preview', icon: 'preview' },
+    children: [
+      {
+        path: '/preview1',
+        name: 'preview1',
+        component: () => import('@/views/preview/index'),
+        meta: { title: 'Preview', icon: 'preview' }
+      },
+      {
+        path: '/preview2',
+        name: 'preview2',
+        component: () => import('@/views/preview/index2'),
+        meta: { title: 'Preview2', icon: 'preview' }
+      },
+      {
+        path: '/preview3',
+        name: 'preview3',
+        component: () => import('@/views/preview/index3'),
+        meta: { title: 'Preview3', icon: 'preview' }
+      }
+    ]
+  },
+
+  {
+    path: '/preview-detail',
+    name: 'PreviewDetail',
+    hidden: true,
+    component: () => import('@/views/preview/detail'),
+    meta: { title: 'previewDetail', icon: 'preview' }
+  },
+
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

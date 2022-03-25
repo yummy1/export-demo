@@ -10,7 +10,7 @@
       </el-form-item>
     </el-form>
     <p class="work">技术方案：xlsx + file-saver</p>
-    <p class="result-success">结果：完美实现单级表头和多级表头的导出</p>
+    <p class="result-success">结果：完美实现单级表头和多级表头的导出，适合导出当页数据的情况</p>
     <el-table
       v-if="!isMore"
       key="single"

@@ -36,7 +36,17 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require('./mock/mock-server.js')
+    before: require('./mock/mock-server.js'),
+    proxy: {
+      '/preview/excel.xlsx': {
+        target: 'http://101.43.196.129',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/preview/excel.xlsx': '/excel.xlsx'
+        }
+      }
+    }
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
