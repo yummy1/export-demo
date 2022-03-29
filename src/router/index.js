@@ -94,6 +94,12 @@ export const constantRoutes = [
         name: 'word3',
         component: () => import('@/views/export-word/index3'),
         meta: { title: 'Word3', icon: 'word' }
+      },
+      {
+        path: '/export/word4',
+        name: 'word4',
+        component: () => import('@/views/export-word/index4'),
+        meta: { title: 'Word4', icon: 'word' }
       }
     ]
   },

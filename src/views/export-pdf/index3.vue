@@ -6,7 +6,7 @@
       </el-form-item>
     </el-form>
     <p class="work">技术方案：XDOC文档模板云服务</p>
-    <p class="result-info">结果：比较完美，应该是先生成了word再用word生成pdf，暂时没有查询到js实现word转pdf的方法，需要服务端配合</p>
+    <p class="result-info">结果：比较完美，应该是先用word模板生成了word，再用word生成pdf，暂时没有查询到js实现word转pdf的方法，需要服务端配合</p>
     <p>文档地址：<a href="https://xdts.xdocin.com/" target="__blank">https://xdts.xdocin.com/</a></p>
   </div>
 </template>

@@ -20,6 +20,7 @@
     "element-ui": "2.13.2",
     "file-saver": "^2.0.5",
     "html2canvas": "^1.4.1",
+    "jquery": "^3.6.0",
     "js-cookie": "2.2.0",
     "jspdf": "^2.5.1",
     "jszip": "^2.6.1",
